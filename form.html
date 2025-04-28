@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration form</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        place-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .formbox {
+        height: 60%;
+        width: 100%;
+        padding: 40px;
+        margin: 30px;
+        border: solid;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-radius: 18px;
+      }
+      .formheader {
+        justify-content: center;
+        align-content: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+      }
+      .formbox label {
+        font-size: 20px;
+      }
+
+      .formbox input {
+        height: 30px;
+        width: 100%;
+        border-style:ridge;
+      }
+      .radio-group {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 10px;
+      }
+
+      .radio-group input[type="radio"] {
+        transform: scale(1.2); /* optional: makes radio buttons a bit bigger */
+      }
+
+      .radio-group label {
+        margin-right: 40px;
+        font-size: 20px;
+      }
+
+      .enterbtn {
+        color: white;
+        height: 45px;
+        width: 130px;
+        background-color: rgb(66, 200, 245);
+        border: none;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 140px;
+        border-radius: 18px;
+      }
+
+      .enterbtn:hover {
+        background-color: rgb(0, 140, 200); /* darker shade on hover */
+        cursor: pointer; /* changes cursor to a pointer */
+  
+        transition: all 0.3s ease; /* smooth transition */
+      }
+    </style>
+  </head>
+  <body>
+    <form class="formbox">
+      <div class="formheader">
+        <h1>Registration Form</h1>
+      </div>
+      <label>Student name</label><br />
+      <input type="text" />
+      <br />
+      <br />
+      <label>Address</label><br />
+      <input type="text" />
+      <br />
+      <br />
+      <div class="radio-group">
+        <input type="radio" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" />
+        <label for="female">Female</label>
+      </div>
+      <br />
+      <label>File upload</label><br />
+      <input type="text" />
+      <br>
+      <button class="enterbtn">Enter</button>
+    </form>
+  </body>
+</html>
