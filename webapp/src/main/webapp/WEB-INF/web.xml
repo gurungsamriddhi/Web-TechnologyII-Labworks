@@ -1,0 +1,45 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    
+    <display-name>JSP App</display-name>
+
+    <!-- Configure the servlet -->
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.example.HelloServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>  
+        <servlet-class>servletone</servlet-class>  
+        <servlet-name>servletone</servlet-name>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>servletone</servlet-name>  
+        <url-pattern>/servletone</url-pattern>  
+    </servlet-mapping>  
+  
+    <servlet>  
+        <servlet-class>servlettwo</servlet-class> 
+        <servlet-name>servlettwo</servlet-name>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>servlettwo</servlet-name>  
+        <url-pattern>/servlettwo</url-pattern>  
+    </servlet-mapping>  
+
+    
+    <!-- Configure JSP -->
+    <welcome-file-list>
+        <welcome-file>form.html</welcome-file>
+    </welcome-file-list>
+</web-app>
